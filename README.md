@@ -1,5 +1,8 @@
 # Card Status API
 
+**GitHub**:https://github.com/Shivkumar-Raghuwanshi/card_api
+**Docker repo**: Docker repo link will added here.
+
 ## Overview
 The Card Status API provides information about the status of cards. It includes endpoints for getting the status of a card and for getting the status of a card by its ID or user’s contact number.
 
@@ -48,10 +51,14 @@ Python was chosen as the programming language due to its readability and ease of
 **Response**
 The response is a JSON object that contains the status of the card. The status includes Delivered, DeliveryException, Pickup, and Returned objects related to the card. Each object contains the following fields:
 
-*id*: The ID of the status.
-*card*: The ID of the related card.
-*timestamp*: The timestamp of the status.
-*comment*: The comment of the status. This field is not included in Pickup and Returned objects.
+- **id**: The ID of the status.
+
+- **card**: The ID of the related card.
+
+- **timestamp**: The timestamp of the status.
+
+- **comment**: The comment of the status. This field is not included in Pickup and Returned objects.
+
 If no card matches the query parameter, the endpoint returns a 404 status code with an error message.
 
 **Example**:
