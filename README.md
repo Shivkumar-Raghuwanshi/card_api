@@ -2,7 +2,7 @@
 
 - **GitHub**: https://github.com/Shivkumar-Raghuwanshi/card_api
 
-- **Docker repo**: Docker repo link will added here.
+- **Docker repo**: https://hub.docker.com/r/shivkumar56/zywa-web.
 
 ## Overview
 The Card Status API provides information about the status of cards. It includes endpoints for getting the status of a card and for getting the status of a card by its ID or user’s contact number.
