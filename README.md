@@ -14,6 +14,30 @@ The Card Status API provides information about the status of cards. It includes 
 3. **Django Rest Framework**: Django Rest Framework (DRF) is a powerful and flexible toolkit for building Web APIs in Django. You can install it by running pip install djangorestframework.
 4. **Database System:** Django supports several database systems like SQLite, PostgreSQL, MySQL, and Oracle. The default is SQLite and it’s included in the Python standard library.
 
+## Steps to Run the Project
+ Clone the Repository: Clone the repository from GitHub using the following command:
+- git clone https://github.com/Shivkumar-Raghuwanshi/card_api.git
+
+Navigate to the Project Directory:
+- cd card_api
+
+Install Dependencies: Install the required dependencies using pip:
+- pip install -r requirements.txt
+
+Run Migrations: Apply the database migrations:
+- python manage.py migrate
+
+Start the Server: Finally, start the Django server:
+- python manage.py runserver
+
+The Card Status API will now be running at http://localhost:8000/api/get_card_status/?test_card or test_number.
+
+## Docker Instructions
+If you want to run the project using Docker, you can pull the Docker image from Docker Hub and run it:
+
+- docker pull shivkumar56/zywa-web
+- docker run -d -p 8000:8000 shivkumar56/zywa-web
+
 ### Approach
 
 The approach taken in this project is to create a RESTful API using Django and Django Rest Framework. The API includes an endpoint for getting the status of a card by its ID or user’s contact number. The data is stored in a relational database and accessed using Django’s Object-Relational Mapping (ORM) capabilities.
@@ -66,9 +90,11 @@ If no card matches the query parameter, the endpoint returns a 404 status code w
 
 **Example**:
 Request:
-GET http://localhost:8000/api/get_card_status/?query=test_card
+
+- GET http://localhost:8000/api/get_card_status/?query=test_card
 
 Response:
+
 
 {
     "Delivered": [
